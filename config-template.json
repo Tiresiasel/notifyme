@@ -1,0 +1,10 @@
+{
+  "sender": "",
+  "receiver_list": [],
+  "from_header": "",
+  "to_header": "",
+  "subject": "",
+  "smtp_host": "",
+  "smtp_password": "",
+  "keyword_list": []
+}

@@ -1,0 +1,1 @@
+from .get_news import ChainNews
