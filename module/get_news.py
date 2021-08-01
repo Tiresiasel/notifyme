@@ -64,7 +64,7 @@ class ChainNews(NewsBase):
         # 输入单条news的soup返回该news的title
         return news.find('a').get('title')
 
-    def update_all_qualify_news(self, params: dict, condition: str):
+    def update_all_qualify_news(self, params: dict, condition: str): #TODO 使用协程去做数据获取
         news_soup = self.make_soup(params)
         news_list = self.get_all_news(news_soup)
         if condition == 'today':
