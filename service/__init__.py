@@ -1,2 +1,2 @@
-from .email_template import NotifyMe
-from .send_email import SendEmail
+from .template import NotifyMe
+from .notify import SendEmail

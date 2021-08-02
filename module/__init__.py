@@ -1,1 +1,2 @@
-from .get_news import ChainNews
+from .news import ChainNews
+from .collection import Collection

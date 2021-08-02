@@ -10,7 +10,7 @@ class Main:
             self.keyword_list = json.load(f)["keyword_list"]
         cn = ChainNews("https://www.chainnews.com/", "search?")
         for keyword in self.keyword_list:
-            cn.update_all_qualify_news({"q": keyword},"today")
+            cn.update_all_qualify_news({"q": keyword}, "today")
         self.news_dict = cn.news_dict
         if self.news_dict:
             self.msg = NotifyMe(self.news_dict).notify_me_news
@@ -27,6 +27,7 @@ class Main:
                 self.se.send_email(receiver)
         else:
             self.send_emails()
+
 
 if __name__ == '__main__':
     main = Main()
